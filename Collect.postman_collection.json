@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "088f06cd-e71d-48ed-a806-588a1dc644dc",
+		"name": "Collect",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38970815"
+	},
+	"item": [
+		{
+			"name": "Form for users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descriptoin\": \"It`s monday\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/UploadForm.html",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"UploadForm.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rewrite",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descriptoin\": \"It`s monday\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/notes/Goodday",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notes",
+						"Goodday"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/notes/Goodday",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notes",
+						"Goodday"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by param",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/notes/Goodday",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notes",
+						"Goodday"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/notes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "note_name",
+							"value": "Sleep",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "between 21 p.m. and 2 a.m.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/write",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"write"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Else method",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "note_name",
+							"value": "Sleep",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "between 21 p.m. and 2 a.m.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
